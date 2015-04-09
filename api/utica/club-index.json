@@ -1,0 +1,162 @@
+{
+	"clubs": [
+		{
+		 "name" : "Club Creaticity",
+	 	 "description" : "We encourage students that have the desire to grow personally and professionally through experiential events and activities. The club strives to enrich students' educational endeavors with creative thinking. We hope to expose opportunities that foster achievement with self-confidence, thinking outside the box, taking action towards healthy life choices, and with sharing interests relating to cultures and society. Club Creaticity also promotes an entrepreneurial environment in our local community",
+		 "president" : "President- Stacey Smith",
+		 "officers" : "Vice President- Sarita Ruiz\nSecretary- Megan Gargas\nTreasurer- Lynne Gigliotti",
+		 "meeting-times" : "Tuesdays 1PM Student Center Bar",
+		 "website" : "https://www.facebook.com/ClubCreaticity",
+		 "message" : "Dare to be Different\n\nWe send weekly update emails.\nFacebook group for member info: https://www.facebook.com/groups/Creaticity315/"
+		},
+		{
+		 "name" : "West Indian African Club (W.I.A.C)",
+	 	 "description" : "In WIAC we focus on cultural diversity, unity, as well as innovative activities to better our campus. People from any ethnic background can join the more Diversity the better.",
+		 "president" : "President: Eustace Camal Jr (EJ)"
+		},
+	 	{
+	 	 "name" : "Black Latino American Student Union (B.L.A.S.U)",
+	 	 "description" : "We are the Black Latino American Student Union of SUNY-IT. Our main focus is to educate the SUNY-POLY community about Black and Latin/Spanish culture by creating an atmosphere of unity. As well as to further enhance the social life and activities on campus. Members of this group will also have the opportunity to develop their academic skills through networking with other club members.",
+		 "president" : "President: Denzel Gordon",
+		 "meeting-times" : "3:00pm",
+		 "location" : "Student Center Conference Room"
+		},
+		{
+		 "name" : "MAGIC",
+	 	 "description" : "The purpose is to provide a safe, secure and friendly environment for people of all skill levels to come and enjoy the game Magic: The Gathering.  Magic the Gathering club also hosts many events including but not limited to new product preleases, booster drafts, as well other events for players to come together for a social and entertaining experience.",
+		 "president" : "President: Matthew Biscardi"
+		},
+		{
+		 "name" : "Wildcats Care",
+	 	 "description" : "Established in 2013, this club was made to help students reach degree requirements, develop relationships and help out SUNY Polytechnic Institute and the Central New York area. Our goal is to make people's lives easier! The Wildcat's Care club travels all over Central New York to provide community service of any kind. Who cares? Wildcat's Care!",
+		 "president" : "Presidents: Michael Aiello & Celine Fucci",
+		 "officers" : "Vice President: Shelby Kostal\nSecretary: Logan Pacelli\nTreasurer: Dom Provenzano",
+		 "location" : "2nd Level of Campus Center",
+		 "meeting-times" : "Friday's at 7:00pm",
+		 "website" : "www.wildcatscare.com"
+		},
+		{
+		 "name" : "Television Production Club",
+		 "description" : " ",
+		 "president" : "President: Devin Zapka"
+		},
+		{
+		 "name" : "Duel Academy",
+	 	 "description" : "The purpose is to provide a haven for duelists of all card games to come and collaboarate, due, and trade with other duelists. Duel Academy is also always interested in added/ introducing new card games students may have to offer or club members that want to learn a new card game.",
+	 	 "president" : "Presient:  Josh Koster"
+		},
+		{
+		 "name" : "Boarders Club",
+	 	 "description" : "The idea was to make it easier for skaters/long boarders/ snowboarders/skiers to know and meet more people like each other. As well as create events for people who are interested in learning about these type of sports.",
+		 "president" : "President: Khameron Gumbs"
+		},
+		{
+		 "name" : "Anime Club",
+		 "description" : " ",
+		 "president" : "President: Emily Lafary"
+		},
+		{
+		 "name" : "Brewers Club",
+		 "description" : "As a club our purpose is to strive to educate the members of the school community about the different steps and methods of brewing, tasting and evaluating brews of our own making, touring breweries to further our education, competing in local brew competitions and exploring the scientific process behind brewing.",
+		 "president" : "President: Salvatore (Sal) Zaydon",
+		 "website" : "http://brewers.cs.sunyit.edu",
+		 "meeting-times" : "Fridays",
+		 "location" : "Donovan G133"
+		},
+		{
+		 "name" : "Students of Christ",
+		 "description" : " ",
+		 "president" : "President: Alex Szentgyorgyi"
+		},
+		{
+		 "name" : "Role Players Guild (RPG)",
+		 "description" : " ",
+		 "president" : "President: Amanda  Ruhland"
+		},
+		{
+		 "name" : "Asian Affiliated Association",
+	 	 "description" : "Purpose is to gather individuals that would like to partake and enrich their own livelihoods with Asian cultures. We do so by educating this group of people on the different subject matters to which we exemplify by making a dish of a certain culture and analyzing the taste and spices specifically used",
+		 "president" : "President: James Zhu"
+		},
+		{
+		 "name" : "Pool Players Club",
+		 "description" : "As a club our purpose is to educate the members of the school community about the game of billiards. This has been done through fun social nights, and professional tournaments. We have cosmic pool usually every semester. We also have single, double, buy in, and sudden death tournaments as well. We are always looking for new members as our club wishes to expand in the future and continue tradition at SUNY Polytechnic Institute.",
+		 "president" : "President: Aaron Dzigas",
+		 "meeting-times" : "4:00pm",
+		 "location" : "Student Center Game Room"
+		},
+		{
+		 "name" : "BAJA Society of Automotive Engineers (SAE)",
+		 "description" : "",
+		 "president" : "President: Benjamin Burris"
+		},
+		{
+		 "name" : "SUNYIT Student Veterans",
+		 "description" : "Purpose is to provide military, active duty personnel and club members with the resources, support and advocacy needed to succeed in higher education following graduation.",
+		 "president" : "President: Lance Tlustos",
+		 "website" : "http://sunypolysvc.weebly.com/",
+		 "meeting-times" : "12:30",
+		 "location" : "Donovan Hall Room 1216 (Student Veterans’ Lounge)"
+		},
+		{
+		 "name" : "International  Student Association (I.S.A)",
+	 	 "description" : "Our mission is to get all the international students together and promote different cultures. We try to showcase different cultures through small parties and events. We are open to anyone who likes to be a part of this big culturally mongrelized community.",
+		 "president" : "President: Sindhusha Marru"
+		},
+		{
+		 "name" : "Psychology & Sociology Club",
+	 	 "description" : "Our mission is to give back to the community while helping the students involve in this club to establish connections that will better themselves for a career down the road in the fields of Psychology, Sociology, and community and Behavioral Health. We partake in several community service activities and host an annual benefit dinner to raise money for a non-profit organization of our choosing.",
+		 "president" : "President: Lauren Pugh"
+		},
+		{
+		 "name" : "SUNY Cycling Club",
+		 "description" : " ",
+		 "president" : "President: Benjamin Burris"
+		},
+		{
+		 "name" : "SUNYIT Adventure Club (ITAC)",
+		 "description" : "The IT Adventure Club is group that participates in any adventurous activity. These activities commonly include hiking, camping, rock climbing, slack-lining, or anything in between. This groups is always open to new ideas and new members. Meetings are currently upstairs in the Student Center on Tuesdays at 9:30pm",
+		 "president" : "President: Tom Teufel",
+		 "officers" : "Nick Fiorini - Vice President\nGreg Kline - Secretary\nKelly Kuse - Treasurer"
+		},
+		{
+		 "name" : "SUNYIT Dance Club",
+	 	 "description" : "The purpose of dance club is to allow students to either continue or start a dance career. Our hope is to put on more performances and maybe even plays. All singers’ musicians, artist, dancers and everyone in between is more than welcome to join us.",
+		 "president" : "President: Devon Mancini"
+		},
+		{
+		 "name" : "Gay Straight Alliance (GSA)",
+		 "description" : " ",
+		 "president" : "President: Isabella Johns"
+		},
+		{
+		 "name" : "Network & Computer Security (N.C.S)",
+	 	 "description" : "NCS brings students together to develop their knowledge of computers and computer security.  Students are invited to hel administer our student run network to get hands on experience managing business critical servers and services in a low risk environment . By exposing students to new challenges meeting prominent members of the industry, and providing a fun learning space the NCS club hopes to teach our members to be the best that they can.",
+		 "president" : "President: Peter Shipman",
+		 "officers" : "Vice President: Dan Spier\nSecretary: Austin Karn\nTreasurer: Joseph Vandermaas",
+		 "website" : "https://ncsclub.sunyit.edu/",
+		 "location" : "Kunsela C107",
+		 "meeting-times" : "Tuesdays at noon"
+		},
+		{
+		 "name" : "Institute of Electrical and Electronics Engineers (IEEE)",
+		 "description" : "IEEE inspires a global community through IEEE’s highly cited publications, conferences, and technology standards, professional and educational activities.",
+		 "president" : "President: Raymond Mashewske"
+		},
+		{
+		 "name" : "Student Health Information Management Association (SHIMA)",
+		 "description" : "SHIMA will allow for networks to be built among students, faculty others working in the profession, and the community. We hope that SHIMA will allow for others to become more aware of the HIM field and what is has to offer.",
+		 "president" : "President: Laken Macfarland"
+		},
+		{
+		 "name" : "Communication and Information Design (CID) Club",
+		 "description" : " ",
+		 "president" : "President: Cherese Lumsden- Wallace"
+		},
+		{
+		 "name" : "Nursing Club",
+		 "description" : "The purpose of the nursing club is to bring together nursing majors or anyone in the health field, in order to share experiences and form networks for the future.",
+		 "president" : "President: Hannah Nortz"
+		}
+	]
+}

@@ -1,0 +1,7 @@
+Pods/
+screenshots/
+
+*.xcuserstate
+*.xcbkptlist
+*.xccheckout
+

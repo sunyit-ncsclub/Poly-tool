@@ -1,0 +1,62 @@
+[
+  {
+    "name" : "Albany",
+    "items" : [
+      "Contacts",
+      "Intranet",
+      "Blackboard",
+      "Ellucian",
+      "School Store",
+    ],
+    "locations" : [
+      "http://www.sunycnse.com/Contact.aspx",
+      "http://intranet.sunycnse.com",
+      "https://blackboard.albany.edu",
+      "https://asurams.gabest.usg.edu/pls/B210/twbkwbis.P_GenMenu?name=homepage",
+      "http://albany.bncollege.com/"
+    ]
+  },
+  {
+    "name" : "Utica",
+    "items" : [
+      "Angel",
+      "Athletics",
+      "Banner",
+      "Cancelled Classes",
+      "Clubs",
+      "Contacts",
+      "Current Events",
+      "Directory",
+      "Laundry",
+      "School Store",
+    ],
+    "locations" : [
+      "https://sunyit.sln.suny.edu/home.asp?mode=PDA",
+      "http://www.wildcats.sunyit.edu/landing/index",
+      "https://banner.sunyit.edu",
+      "https://sunyit.edu/apps/canceled_classes",
+      "your-api-endpoint-here-see-README.md/utica/club-index.json",
+      "your-api-endpoint-here-see-README.md/utica/contact-index.json",
+      "http://www.sunyit.edu/apps/calendar/main.php?view=week",
+      "https://www.sunyit.edu/apps/directory",
+      "http://m.laundryview.com/lvs.php?s=5777",
+      "http://m.bkstr.com/suny-itstore/home",
+    ]
+  },
+  {
+    "name" : "Social",
+    "items" : [
+      "Instagram",
+      "@SUNYIT",
+      "Facebook",
+      "YouTube"
+    ],
+    "locations" : [
+      "https://instagram.com/sunypolytechnic",
+      "https://twitter.com/sunyit",
+      "http://www.facebook.com/sunypolytechnic",
+      "http://youtube.com/sunyit"
+    ]
+  }
+]
+
