@@ -22,12 +22,7 @@ class DetailWebController: UIViewController, WKNavigationDelegate, UIActivityIte
 
 	required init(destination: NSURL) {
 		self.destination = destination
-		super.init()
-	}
-
-	override init() {
-		self.destination = NSURL(string: SUNYPolyWebsiteString)!
-		super.init()
+		super.init(nibName: nil, bundle: nil)
 	}
 
 	required init(coder aDecoder: NSCoder) {
@@ -98,7 +93,7 @@ class DetailWebController: UIViewController, WKNavigationDelegate, UIActivityIte
 				pop.presentPopoverFromBarButtonItem(button, permittedArrowDirections: UIPopoverArrowDirection.Any, animated: true)
 			}
 		} else {
-			presentViewController(activity, animated: true, { [weak w = self.webView?] () -> Void in
+			presentViewController(activity, animated: true, completion: { [weak w = self.webView] () -> Void in
 			})
 		}
 	}
@@ -139,7 +134,7 @@ class DetailWebController: UIViewController, WKNavigationDelegate, UIActivityIte
 
 	override func observeValueForKeyPath(keyPath: String, ofObject object: AnyObject, change: [NSObject : AnyObject], context: UnsafeMutablePointer<Void>) {
 		if context == &self.context {
-			let progress = change[NSKeyValueChangeNewKey] as Float
+			let progress = change[NSKeyValueChangeNewKey] as! Float
 			progressView?.progress = progress
 		} else {
 			super.observeValueForKeyPath(keyPath, ofObject: object, change: change, context: context)
@@ -151,7 +146,7 @@ class DetailWebController: UIViewController, WKNavigationDelegate, UIActivityIte
 	/** Pass true to show a refresh control. Pass false to show a cancel-stop-loading control.
 	*/
 	func toggleRefreshControl(refresh: Bool) {
-		let items = toolbar?.items as [UIBarButtonItem]
+		let items = toolbar?.items as! [UIBarButtonItem]
 		let currentControl = items[2]
 		var newControl: UIBarButtonItem
 		
@@ -190,17 +185,17 @@ class DetailWebController: UIViewController, WKNavigationDelegate, UIActivityIte
 
 	// MARK: Delegate methods
 
-	func webView(webView: WKWebView!, didFinishNavigation navigation: WKNavigation!) {
+	func webView(webView: WKWebView, didFinishNavigation navigation: WKNavigation!) {
 		updateDirectionalControls()
 		toggleRefreshControl(true)
 	}
 
-	func webView(webView: WKWebView!, didCommitNavigation navigation: WKNavigation!) {
+	func webView(webView: WKWebView, didCommitNavigation navigation: WKNavigation!) {
 		updateDirectionalControls()
 		toggleRefreshControl(false)
 	}
 
-	func webView(webView: WKWebView!, didFailNavigation navigation: WKNavigation!, withError error: NSError!) {
+	func webView(webView: WKWebView, didFailNavigation navigation: WKNavigation!, withError error: NSError) {
 		updateDirectionalControls()
 		toggleRefreshControl(true)
 	}

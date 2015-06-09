@@ -54,6 +54,7 @@
 		D817E0491A363EA80099BDFD /* DetailWebController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailWebController.swift; sourceTree = "<group>"; };
 		D817E04B1A3651020099BDFD /* ClubsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubsController.swift; sourceTree = "<group>"; };
 		D817E04F1A3664330099BDFD /* ContactsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsController.swift; sourceTree = "<group>"; };
+		D8BA98341B267A4500ACF64D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D8CF37DF1A7A60A100FF1A47 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		D8DC58C71A7050E90059F538 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		D8DC58C91A7057BE0059F538 /* Theme+UITableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Theme+UITableViewController.swift"; sourceTree = "<group>"; };
@@ -93,6 +94,7 @@
 		D817E00D1A3633420099BDFD = {
 			isa = PBXGroup;
 			children = (
+				D8BA98341B267A4500ACF64D /* README.md */,
 				D817E0181A3633430099BDFD /* Poly Tool */,
 				D817E0301A3633430099BDFD /* Poly Tool Tests */,
 				D817E0171A3633430099BDFD /* Products */,

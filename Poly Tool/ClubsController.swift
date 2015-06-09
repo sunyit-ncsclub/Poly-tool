@@ -8,7 +8,7 @@ let ClubsControllerIdentifier = "kClubsController"
 
 typealias ClubArray = [[String : String]]
 
-class ClubsController: UITableViewController {
+class ClubsController: ThemeTableViewController {
 	var clubs: ClubArray = []
 	var destination: String?
 
@@ -35,7 +35,7 @@ class ClubsController: UITableViewController {
 
 	func loadClubs(clubs: JSON, time: NSDate) {
 		refreshControl?.endRefreshing()
-		self.clubs = clubs["clubs"] as ClubArray
+		self.clubs = clubs["clubs"] as! ClubArray
 
 		if clubs.count == 0 {
 			toast("No data downloaded. Sorry!", duration: 5.0)
@@ -80,7 +80,7 @@ class ClubsController: UITableViewController {
 
 
 	override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-		var cell = tableView.dequeueReusableCellWithIdentifier(ClubCellIdentifier, forIndexPath: indexPath) as UITableViewCell
+		var cell = tableView.dequeueReusableCellWithIdentifier(ClubCellIdentifier, forIndexPath: indexPath) as! UITableViewCell
 
 		cell.selectedBackgroundView = UIView()
 		let club = clubs[indexPath.row]
@@ -173,7 +173,7 @@ class ClubsController: UITableViewController {
 				println("club name: \(name)")
 				if let url = NSURL(string: website) {
 					if let n = name {
-						let detail = self.storyboard?.instantiateViewControllerWithIdentifier(DetailWebIdentifier) as DetailWebController
+						let detail = self.storyboard?.instantiateViewControllerWithIdentifier(DetailWebIdentifier) as! DetailWebController
 						detail.destination = url
 						detail.title = n
 						self.showDetailViewController(detail, sender: self)

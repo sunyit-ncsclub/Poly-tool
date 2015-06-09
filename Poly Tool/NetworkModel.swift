@@ -93,8 +93,8 @@ struct NetworkModel {
 		}
 	}
 
-	static func sendFangRequest(complete: completeBlock, appendage: String, failure: failureBlock) {
-		let api = "your-api-endpoint-here-see-README.md/poly-tool/"
+	static func sendRelativeRequest(complete: completeBlock, appendage: String, failure: failureBlock) {
+		let api = "https://raw.githubusercontent.com/sunyit-ncsclub/Poly-tool/master/api/"
 		let endpoint = NSURL(string: api + appendage)
 
 		if let e = endpoint {

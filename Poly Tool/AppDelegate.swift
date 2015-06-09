@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
 
 		window?.tintColor = Theme.highlightSecondary
 
-		UINavigationBar.appearance()?.barTintColor = Theme.backgroundPrimary
+		UINavigationBar.appearance().barTintColor = Theme.backgroundPrimary
 
 		UINavigationBar.appearance().titleTextAttributes = [ NSForegroundColorAttributeName : Theme.highlightPrimary ]
 		UIToolbar.appearance().backgroundColor = Theme.backgroundPrimary
@@ -28,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
 		UIProgressView.appearance().tintColor = Theme.backgroundPrimary
 		UICollectionReusableView.appearance().tintColor = Theme.highlightPrimary
 
-		let splitViewController = window?.rootViewController as UISplitViewController
+		let splitViewController = window?.rootViewController as! UISplitViewController
 		splitViewController.delegate = self
 		if UIDevice.currentDevice().userInterfaceIdiom == .Pad {
 			splitViewController.preferredDisplayMode = .AllVisible

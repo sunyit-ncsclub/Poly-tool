@@ -52,7 +52,7 @@ class PolyMenuController: UICollectionViewController {
 
 	func loadMenu(menuItems: JSON, time: NSDate) {
 		if let campusMenu = menuItems as? PolyCampusMenus {
-			self.items = menuItems as PolyCampusMenus
+			self.items = menuItems as! PolyCampusMenus
 		} else {
 			println(menuItems)
 			NetworkModel.invalidate("index.json")
@@ -108,7 +108,7 @@ class PolyMenuController: UICollectionViewController {
 
 	func requestData() {
 		refreshControl.beginRefreshing()
-		NetworkModel.sendFangRequest(self.loadMenu, appendage:"index.json", self.failedMenuLoad)
+		NetworkModel.sendRelativeRequest(self.loadMenu, appendage:"index.json", failure: self.failedMenuLoad)
 	}
 
 	func reload(regions: Array<Dictionary<String, AnyObject>>) {
@@ -144,7 +144,7 @@ class PolyMenuController: UICollectionViewController {
 	}
 	
 	override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-		var cell = collectionView.dequeueReusableCellWithReuseIdentifier(PolyMenuCellIdentifier, forIndexPath: indexPath) as MenuItemCollectionViewCell
+		var cell = collectionView.dequeueReusableCellWithReuseIdentifier(PolyMenuCellIdentifier, forIndexPath: indexPath) as! MenuItemCollectionViewCell
 		cell.prepareForReuse()
 		
 		cell.textLabel?.textColor = Theme.textColor
@@ -165,7 +165,7 @@ class PolyMenuController: UICollectionViewController {
 	}
 	
 	override func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
-		var header = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: PolyMenuHeaderIdentifier, forIndexPath: indexPath) as UICollectionReusableView
+		var header = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: PolyMenuHeaderIdentifier, forIndexPath: indexPath) as! UICollectionReusableView
 		let section = indexPath.section
 		
 		if header.subviews.count == 0 {
@@ -264,7 +264,7 @@ class PolyMenuController: UICollectionViewController {
 		}
 		
 		if menu.value.lastPathComponent == "contact-index.json" {
-			let contacts = storyboard?.instantiateViewControllerWithIdentifier(ContactsControllerIdentifier) as ContactsController
+			let contacts = storyboard?.instantiateViewControllerWithIdentifier(ContactsControllerIdentifier) as! ContactsController
 			contacts.destination = menu.value
 			contacts.title = menu.key
 			let nav = UINavigationController(rootViewController: contacts)
@@ -272,7 +272,7 @@ class PolyMenuController: UICollectionViewController {
 			return false
 			
 		} else if menu.value.lastPathComponent == "club-index.json" {
-			let clubs = storyboard?.instantiateViewControllerWithIdentifier(ClubsControllerIdentifier) as ClubsController
+			let clubs = storyboard?.instantiateViewControllerWithIdentifier(ClubsControllerIdentifier) as! ClubsController
 			clubs.destination = menu.value
 			clubs.title = menu.key
 			let nav = UINavigationController(rootViewController: clubs)

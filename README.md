@@ -2,6 +2,24 @@
 
 Poly Tool is an app to display information relevent to SUNY Poly students. 
 
+## Quick Start
+
+1. Download and install Xcode 6.2 or higher.
+- Run `gem install cocoapods`
+- Run `pod install` 
+- Open `Poly Tool.xcworkspace`
+- Build and run with Command-R 
+
+### Networking
+
+1. The contents of `api/` need to be hosted on a server. 
+- Change `api/index.json` references's to `club-index.json` and `contact-index.json` values to reflect your new complete and absolute URL.
+	- Replace the URLs on lines 38 and 39, corresponding to Clubs and Contacts in the items peer-array. 
+- Change `Poly Tool/NetworkModel.swift` to reflect your new base URL. (Each view controller appends it's appropriate API endpoint.) 
+	- Replace the URL on line 97 (`let api = "https:"`…)
+	- This is in the method `sendRelativeRequest`. It is only used to request index.json. Clubs and contacts are requested as absolute URLs using `sendRequest`. 
+- [Bonus] Follow the same format of `club/contact-index` and apply it to new Albany dictionaries. 
+
 ## Getting Started
 
 1. Download and install Xcode, https://developer.apple.com/xcode/.
@@ -10,13 +28,6 @@ Poly Tool is an app to display information relevent to SUNY Poly students.
 - Open `Poly Tool.xcworkspace` with Xcode 6.1 or higher. 
 - Build and run with Command-R.
 - [Anytime] Set up JSON api endpoints as listed in Networking below.
-
-### Networking
-
-1. The contents of `api/` need to be hosted on a server. 
-- Change `api/index.json`'s `club-index.json` and `contact-index.json` values to reflect your new complete URL.
-- Change `Poly Tool/NetworkModel.swift` to reflect your new base URL. Each view controller appends it's appropriate API endpoint. 
-- [Bonus] You may follow the same format of `club/contact-index` and apply it to new Albany dictionaries. 
 
 ### Dependencies
 
@@ -61,7 +72,7 @@ Q. Why is `index.json` an array of dictionaries of corresponding arrays, rather 
 A. At the time of writing, sorted doubly nested keys of dictionaries into corresponding arrays was burdensome. The potential of additional groups, beyond Utica/Albany, made corresponding pre-sorted arrays an obvious choice. 
 
 Q. How can I get this on my phone?
-A. Please see https://developer.apple.com/programs/start/ios/. Talk to your professors today about introducing an iOS class. 
+A. Please see [https://developer.apple.com/education/](https://developer.apple.com/education). With Xcode 7 / iOS 9 a developer program membership is _not_ required to install on your own devices. Talk to your professors today about introducing an iOS class. 
 
 Q. How do I remove CocoaPods and/or TUSafariActivity? 
 A. Delete the Pod* files. Remove TUSafariActivity from the Bridging Header. Remove `TUSafariActivity()` from line 93 in DetailWebController.swift. 

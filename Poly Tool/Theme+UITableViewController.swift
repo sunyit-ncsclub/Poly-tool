@@ -3,8 +3,8 @@
 
 import UIKit
 
-extension UITableViewController {
-	func tableView(tableView: UITableView, didHighlightRowAtIndexPath indexPath: NSIndexPath) {
+class ThemeTableViewController: UITableViewController {
+	override func tableView(tableView: UITableView, didHighlightRowAtIndexPath indexPath: NSIndexPath) {
 		if let cell = tableView.cellForRowAtIndexPath(indexPath) {
 			cell.selectedBackgroundView.backgroundColor = Theme.cellSelection
 			cell.textLabel?.textColor = Theme.highlightPrimary
@@ -14,8 +14,8 @@ extension UITableViewController {
 			}
 		}
 	}
-
-	func tableView(tableView: UITableView, didUnhighlightRowAtIndexPath indexPath: NSIndexPath) {
+	
+	override func tableView(tableView: UITableView, didUnhighlightRowAtIndexPath indexPath: NSIndexPath) {
 		if let cell = tableView.cellForRowAtIndexPath(indexPath) {
 			cell.selectedBackgroundView.backgroundColor = nil
 			cell.textLabel?.textColor = Theme.textColor
@@ -43,14 +43,4 @@ extension UITableViewController {
 	}
 }
 
-//override func tableView(tableView: UITableView, didHighlightRowAtIndexPath indexPath: NSIndexPath) {
-//	if let cell = tableView.cellForRowAtIndexPath(indexPath) {
-//		cell.selectedBackgroundView.backgroundColor = Theme.cellSelection
-//	}
-//}
-//
-//override func tableView(tableView: UITableView, didUnhighlightRowAtIndexPath indexPath: NSIndexPath) {
-//	if let cell = tableView.cellForRowAtIndexPath(indexPath) {
-//		cell.selectedBackgroundView.backgroundColor = nil
-//	}
-//}
+

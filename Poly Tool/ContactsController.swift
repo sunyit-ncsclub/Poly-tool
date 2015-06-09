@@ -9,7 +9,7 @@ let ContactsControllerIdentifier = "kContactsController"
 typealias ContactsDictionary = [String : String]
 typealias ContactsKeys = [String]
 
-class ContactsController: UITableViewController {
+class ContactsController: ThemeTableViewController {
 	var contacts: ContactsDictionary = [:]
 	var keys: ContactsKeys = []
 	var destination: String?
@@ -39,10 +39,10 @@ class ContactsController: UITableViewController {
 		
 		if filtered.length == 11 {
 			let formatted = NSString(format: "(%@) %@-%@", filtered.substringWithRange(NSMakeRange(1, 3)), filtered.substringWithRange(NSMakeRange(4, 3)), filtered.substringWithRange(NSMakeRange(7, 4))) as NSString
-			return formatted
+			return formatted as String
 		} else if filtered.length == 10 {
 			let formatted = NSString(format: "(%@) %@-%@", filtered.substringWithRange(NSMakeRange(0, 3)), filtered.substringWithRange(NSMakeRange(3, 3)), filtered.substringWithRange(NSMakeRange(6, 4))) as NSString
-			return formatted
+			return formatted as String
 		} else {
 			return tel
 		}
@@ -58,7 +58,7 @@ class ContactsController: UITableViewController {
 	}
 
 	func loadContacts(json: JSON, time: NSDate) {
-		contacts = json as ContactsDictionary
+		contacts = json as! ContactsDictionary
 		keys = Array(contacts.keys).sorted({ (str1, str2) -> Bool in
 			return str1 < str2
 		})
@@ -114,7 +114,7 @@ class ContactsController: UITableViewController {
 
 
 	override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-		var cell = tableView.dequeueReusableCellWithIdentifier(ContactsCellIdentifier, forIndexPath: indexPath) as UITableViewCell
+		var cell = tableView.dequeueReusableCellWithIdentifier(ContactsCellIdentifier, forIndexPath: indexPath) as! UITableViewCell
 
 		let key = keys[indexPath.row]
 		let contact = formatPhoneNumber(contacts[key]!)
